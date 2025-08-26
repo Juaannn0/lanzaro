@@ -37,28 +37,4 @@
         </div>
     </div>
 </div>
-
-<style>
-.form-description {
-    text-align: center;
-    color: var(--gray-600);
-    margin-bottom: 1.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-}
-
-.auth-footer a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.auth-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Los demás estilos se heredan de login.php */
 </style>

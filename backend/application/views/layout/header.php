@@ -8,6 +8,7 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/layout.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/auth.css') ?>">
     <?php if(strpos(current_url(), 'dashboard') !== false): ?>
         <link rel="stylesheet" href="<?= base_url('assets/css/dashboard.css') ?>">
     <?php endif; ?>

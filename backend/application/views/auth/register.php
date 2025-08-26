@@ -13,8 +13,8 @@
 
         <form action="<?= site_url('auth/register') ?>" method="POST" class="auth-form">
             <div class="form-group">
-                <label for="name" class="form-label">Nombre Completo</label>
-                <input type="text" id="name" name="name" class="form-input" required>
+                <label for="username" class="form-label">Nombre Completo</label>
+                <input type="text" id="username" name="username" class="form-input" required>
             </div>
 
             <div class="form-group">
@@ -58,23 +58,6 @@
         </div>
     </div>
 </div>
-
-<style>
-.terms-check {
-    font-size: 0.875rem;
-    color: var(--gray-600);
-}
-
-.terms-link {
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.terms-link:hover {
-    text-decoration: underline;
-}
-
-/* Los demás estilos se heredan de login.php */
 </style>
 
 <script>

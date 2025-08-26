@@ -9,8 +9,12 @@ RUN a2enmod rewrite
 # Copiar tu código al contenedor
 COPY . /var/www/html
 
-# Ajustar permisos
-RUN chown -R www-data:www-data /var/www/html
+# Crear carpetas y establecer permisos correctos
+RUN mkdir -p /var/www/html/application/cache/sessions \
+    && mkdir -p /var/www/html/application/logs \
+    && chown -R www-data:www-data /var/www/html \
+    && chmod -R 777 /var/www/html/application/cache \
+    && chmod -R 777 /var/www/html/application/logs
 
 # Configuración de Apache para permitir .htaccess de CI3
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
